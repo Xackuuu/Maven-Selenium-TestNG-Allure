@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Tests">
+    <test name="Functional">
+        <classes>
+            <class name="tests.func.StartPageTest"></class>
+        </classes>
+    </test>
+    <test name="Authorization">
+        <classes>
+            <class name="tests.authorization.AuthorizationPageTest"></class>
+        </classes>
+    </test>
+</suite>

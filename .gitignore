@@ -1,0 +1,8 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+.idea/
+.allure/
+/allure-results/
+/target/
+/Maven_Selenium_TestNG_Allure.iml
