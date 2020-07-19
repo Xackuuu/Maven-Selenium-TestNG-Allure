@@ -34,23 +34,9 @@ public abstract class AbstractPage implements ITestListener {
             e.printStackTrace();
         }
     }
-    
-    public static String generationEmail(){
-        StringBuilder stringBuilder = new StringBuilder();
-        for (int i = 0; i < 7; i++) {
-            stringBuilder.append((char)((Math.random() * 123 ) + 97));
-            System.out.println((int)((Math.random() * 123 ) - 97));
-        }
-        stringBuilder.append("@1secmail.com");
-        return stringBuilder.toString();
-    }
 
-    public void scroll(){
+    public void scroll() {
         JavascriptExecutor js = (JavascriptExecutor) DriverManager.getDriver();
         js.executeScript("window.scrollBy(0, 10000)", "");
-    }
-
-    public static void main(String[] args) {
-        System.out.println(generationEmail());
     }
 }
